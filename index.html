@@ -93,10 +93,10 @@
                   <div class="col-lg-4 col-md-4 col-sm-4">
                       <h3 style="padding-top: 1vh;" data-aos="fade-left" data-aos-duration="1000">Question of the Day</h3>
                       <p data-aos="fade-right" data-aos-duration="1000">Answer this question ?</p>
-                      <input type="radio" id="r1" name="gender" value="male"> Male
-                      <input type="radio" id="r2" name="gender" value="female"> Female
-                      <input type="radio" id="r3" name="gender" value="female1"> Female1
-                      <input type="radio" id="r4" name="gender" value="female2"> Female2
+                      <input type="radio" id="r1" name="qod" value="option 1"> Male
+                      <input type="radio" id="r2" name="qod" value="option 2"> Female
+                      <input type="radio" id="r3" name="qod" value="option 3"> Male1 
+                      <input type="radio" id="r4" name="qod" value="option 4"> Female2
                       <br>
                       <button type="submit" class="btn1" onclick="getres()" style="margin-top: 1vh;">Submit</button>
                       <div id="ans1" style="padding-top: 1vh;"></div>
@@ -194,35 +194,30 @@
           <input type="radio" id="q1o3" name="a1" value="option 3"> option 3
           <input type="radio" id="q1o4" name="a1" value="option 4"> option 4
           <br>
-          <div id="ans1"></div>
           <p style="padding-top: 3vh;">Q2. This is a question?</p>
           <input type="radio" id="q2o1" name="a2" value="option 1"> option 1
           <input type="radio" id="q2o2" name="a2" value="option 2"> option 2
           <input type="radio" id="q2o3" name="a2" value="option 3"> option 3
           <input type="radio" id="q2o4" name="a2" value="option 4"> option 4
           <br>
-          <div id="ans2"></div>
           <p style="padding-top: 3vh;">Q3. This is a question?</p>
           <input type="radio" id="q3o1" name="a3" value="option 1"> option 1
           <input type="radio" id="q3o2" name="a3" value="option 2"> option 2
           <input type="radio" id="q3o3" name="a3" value="option 3"> option 3
           <input type="radio" id="q3o4" name="a3" value="option 4"> option 4
           <br>
-          <div id="ans3"></div>
           <p style="padding-top: 3vh;">Q4. This is a question?</p>
           <input type="radio" id="q4o1" name="a4" value="option 1"> option 1
           <input type="radio" id="q4o2" name="a4" value="option 2"> option 2
           <input type="radio" id="q4o3" name="a4" value="option 3"> option 3
           <input type="radio" id="q4o4" name="a4" value="option 4"> option 4
           <br>
-          <div id="ans4"></div>
           <p style="padding-top: 3vh;">Q5. This is a question?</p>
           <input type="radio" id="q5o1" name="a5" value="option 1"> option 1
           <input type="radio" id="q5o2" name="a5" value="option 2"> option 2
           <input type="radio" id="q5o3" name="a5" value="option 3"> option 3
           <input type="radio" id="q5o4" name="a5" value="option 4"> option 4
           <br>
-          <div id="ans5"></div>
           <button type="submit" class="btn1" style="margin-top: 2vh;" onclick="res()">Submit</button>
           <div id="output"></div>
         </div>
@@ -299,12 +294,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         function getres(){
-            var n = document.getElementsByName('gender');
+            var n = document.getElementsByName('qod');
             for(i = 0; i < n.length; i++) {
-                if(n[i].checked && n[i].value == 'female')
+                if(n[i].checked && n[i].value == 'option 1')
                 document.getElementById("ans1").innerHTML
                         = "Correct";
-                else
+                else if(n[i].checked && n[i].value != 'option 1')
                 document.getElementById("ans1").innerHTML
                         = "InCorrect";
             }
@@ -337,7 +332,7 @@
               score = score+1
             }
             document.getElementById("output").innerHTML
-              = score+"/5";
+              = "Total Score "+score+"/5";
         }
     </script>
     <script>
