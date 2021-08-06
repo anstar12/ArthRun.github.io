@@ -112,11 +112,11 @@
                     </div>
                   <div class="col-lg-4 col-md-4 col-sm-4">
                       <h3 style="padding-top: 1vh;" data-aos="fade-left" data-aos-duration="1000">Question of the Day</h3>
-                      <p data-aos="fade-right" data-aos-duration="1000">Which of the following sports is Neeraj Chopra associated with?</p>
-                      <input type="radio" id="r1" name="qod" value="option 1"> Canoeing
-                      <input type="radio" id="r2" name="qod" value="option 2"> Weightlifting
-                      <input type="radio" id="r3" name="qod" value="option 3"> <label class="correct_qod"></label>Javelin throw</label>
-                      <input type="radio" id="r4" name="qod" value="option 4"> Fencing
+                      <p data-aos="fade-right" data-aos-duration="1000">Who is the lead scientist behind the creation of the Oxford-AstraZeneca vaccine?</p>
+                      <input type="radio" id="r1" name="qod" value="option 1"> <label class="correct_qod"></label>Sarah Gilbert</label>
+                      <input type="radio" id="r2" name="qod" value="option 2"> Catherine Green
+                      <input type="radio" id="r3" name="qod" value="option 3"> Philip Dormitzer
+                      <input type="radio" id="r4" name="qod" value="option 4"> None of the above
                       <br>
                       <button type="submit" class="btn1" onclick="getres()" style="margin-top: 1vh;">Submit</button>
                       <div id="ans1" style="padding-top: 1vh;"></div>
@@ -186,7 +186,7 @@
           <h1 style="padding: 5vh;color: yellow;" data-aos="fade-left" data-aos-duration="1000">Highlights<hr></h1>
           <div class="row text-center back" data-aos="fade-up-right" data-aos-duration="1000">
             <div class="col-lg-3 col-md-3 col-sm-3 ">
-              <a href="https://docs.google.com/document/d/1dmE8wjnjcuEdZMnxRLeOCTVOOEFm3wT6tEEFFbyzPDs/edit"><h4>Daily News Analysis</h4>
+              <a href="https://docs.google.com/document/d/1GSCzDZXvZhZbBkhIJq1IYK_F1pIWy-DJdfzNXpVpW6s/edit"><h4>Daily News Analysis</h4>
               <img src="DNA.png" height="auto" width="100vw" >
               </a>
             </div>
@@ -370,7 +370,7 @@
             var u = document.getElementById("r1").style.color = 'green';
             var n = document.getElementsByName('qod');
             for(i = 0; i < n.length; i++) {
-                if(n[i].checked && n[i].value == 'option 3')
+                if(n[i].checked && n[i].value == 'option 1')
                 document.getElementById("ans1").innerHTML
                         = "Correct";
                 else if(n[i].checked && n[i].value != 'option 4')
