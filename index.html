@@ -67,6 +67,55 @@
           </div>
         </div>
       </div>
+      <div class="quizback" id="Daily Quiz">
+        <div style="padding-bottom: 25vh;padding-top: 25vh;">
+        <div class="container">
+          <h1 style="color: yellow;padding: 5vh;" data-aos="fade-left" data-aos-duration="1000">Daily Quiz<hr></h1>
+          <div class="back text-center" data-aos="fade-down-right" data-aos-duration="1000">
+            <p style="padding-top: 3vh;"></p>Q1. Choose the correct statement(s):</p>
+            <p>1. The National Geophysical Research Institute is located in Hyderabad.</p>
+            <p>2. Seismometer is used to record the motion of the ground during an earthquake.</p>
+            <input type="radio" id="q1o1" name="a1" value="option 1"> Only 1
+            <input type="radio" id="q1o2" name="a1" value="option 2"> Only 2
+            <input type="radio" id="q1o3" name="a1" value="option 3"> <label class="correct_quiz"></label>Both 1 and 2</label>
+            <input type="radio" id="q1o4" name="a1" value="option 4"> None of the above
+            <br>
+            <p style="padding-top: 3vh;">Q2. Which of the following statements about Golconda Fort is correct?</p>
+            <p>1. It is located in Bengaluru.</p>
+            <p>2. Abul Hasan Qutub Shah was the ruler of Golconda.</p>
+            <p>3. There are currently 40 UNESCO World Heritage Sites in India.</p>
+            <input type="radio" id="q2o1" name="a2" value="option 1"> 1 and 2 only
+            <input type="radio" id="q2o2" name="a2" value="option 2"> 1 and 3 only
+            <input type="radio" id="q2o3" name="a2" value="option 3"> <label class="correct_quiz"></label>2 and 3 only</label>
+            <input type="radio" id="q2o4" name="a2" value="option 4"> 1,2 and 3
+            <br>
+            <p style="padding-top: 3vh;">Q3. With reference to the Global Hunger Index (GHI), which of the following is correct?</p>
+            <p>1. It is jointly published by Concern Worldwide and Welthungerhilfe.</p>
+            <p>2. India ranked 94 out of 116 countries in 2021.</p>
+            <p>3. The four components of GHI are- insufficient income for food, wasting, stunting and mortality.</p>
+            <input type="radio" id="q3o1" name="a3" value="option 1"> <label class="correct_quiz"></label>1 only</label>
+            <input type="radio" id="q3o2" name="a3" value="option 2"> 2 only
+            <input type="radio" id="q3o3" name="a3" value="option 3"> 3 only
+            <input type="radio" id="q3o4" name="a3" value="option 4"> 1,2 and 3
+            <br>
+            <p style="padding-top: 3vh;">Q4. Which of the following passports are considered to be the most 'powerful' as per the Henley Passport Index 2021?</p>
+            <input type="radio" id="q4o1" name="a4" value="option 1"> <label class="correct_quiz"></label>Japan and Singapore</label>
+            <input type="radio" id="q4o2" name="a4" value="option 2"> Singapore and Germany
+            <input type="radio" id="q4o3" name="a4" value="option 3"> Japan and Germany
+            <input type="radio" id="q4o4" name="a4" value="option 4"> Germany and South Korea
+            <br>
+            <p style="padding-top: 3vh;">Q5. The e-Shram portal has been set up under the aegis of the Ministry of Labour and Employment for?</p>
+            <input type="radio" id="q5o1" name="a5" value="option 1"> Creating a database of India's workforce
+            <input type="radio" id="q5o2" name="a5" value="option 2"> Creating a database of India's organized workers
+            <input type="radio" id="q5o3" name="a5" value="option 3"> <label class="correct_quiz"></label>Creating a database of India's unorganized workers</label>
+            <input type="radio" id="q5o4" name="a5" value="option 4"> None of the above
+            <br>
+            <button type="submit" class="btn1" style="margin-top: 2vh;" onclick="res()">Submit</button>
+            <div id="output"></div>
+          </div>
+        </div>
+        </div>
+      </div>
       <!-- Upcoming Exams -------------------------------------------------------------------------------------->
 
 
@@ -245,55 +294,7 @@
           </div>
         </div>
       </div>
-      <div class="quizback" id="Daily Quiz">
-      <div style="padding-bottom: 25vh;padding-top: 25vh;">
-      <div class="container">
-        <h1 style="color: yellow;padding: 5vh;" data-aos="fade-left" data-aos-duration="1000">Daily Quiz<hr></h1>
-        <div class="back text-center" data-aos="fade-down-right" data-aos-duration="1000">
-          <p style="padding-top: 3vh;"></p>Q1. Choose the correct statement(s):</p>
-          <p>1. The National Geophysical Research Institute is located in Hyderabad.</p>
-          <p>2. Seismometer is used to record the motion of the ground during an earthquake.</p>
-          <input type="radio" id="q1o1" name="a1" value="option 1"> Only 1
-          <input type="radio" id="q1o2" name="a1" value="option 2"> Only 2
-          <input type="radio" id="q1o3" name="a1" value="option 3"> <label class="correct_quiz"></label>Both 1 and 2</label>
-          <input type="radio" id="q1o4" name="a1" value="option 4"> None of the above
-          <br>
-          <p style="padding-top: 3vh;">Q2. Which of the following statements about Golconda Fort is correct?</p>
-          <p>1. It is located in Bengaluru.</p>
-          <p>2. Abul Hasan Qutub Shah was the ruler of Golconda.</p>
-          <p>3. There are currently 40 UNESCO World Heritage Sites in India.</p>
-          <input type="radio" id="q2o1" name="a2" value="option 1"> 1 and 2 only
-          <input type="radio" id="q2o2" name="a2" value="option 2"> 1 and 3 only
-          <input type="radio" id="q2o3" name="a2" value="option 3"> <label class="correct_quiz"></label>2 and 3 only</label>
-          <input type="radio" id="q2o4" name="a2" value="option 4"> 1,2 and 3
-          <br>
-          <p style="padding-top: 3vh;">Q3. With reference to the Global Hunger Index (GHI), which of the following is correct?</p>
-          <p>1. It is jointly published by Concern Worldwide and Welthungerhilfe.</p>
-          <p>2. India ranked 94 out of 116 countries in 2021.</p>
-          <p>3. The four components of GHI are- insufficient income for food, wasting, stunting and mortality.</p>
-          <input type="radio" id="q3o1" name="a3" value="option 1"> <label class="correct_quiz"></label>1 only</label>
-          <input type="radio" id="q3o2" name="a3" value="option 2"> 2 only
-          <input type="radio" id="q3o3" name="a3" value="option 3"> 3 only
-          <input type="radio" id="q3o4" name="a3" value="option 4"> 1,2 and 3
-          <br>
-          <p style="padding-top: 3vh;">Q4. Which of the following passports are considered to be the most 'powerful' as per the Henley Passport Index 2021?</p>
-          <input type="radio" id="q4o1" name="a4" value="option 1"> <label class="correct_quiz"></label>Japan and Singapore</label>
-          <input type="radio" id="q4o2" name="a4" value="option 2"> Singapore and Germany
-          <input type="radio" id="q4o3" name="a4" value="option 3"> Japan and Germany
-          <input type="radio" id="q4o4" name="a4" value="option 4"> Germany and South Korea
-          <br>
-          <p style="padding-top: 3vh;">Q5. The e-Shram portal has been set up under the aegis of the Ministry of Labour and Employment for?</p>
-          <input type="radio" id="q5o1" name="a5" value="option 1"> Creating a database of India's workforce
-          <input type="radio" id="q5o2" name="a5" value="option 2"> Creating a database of India's organized workers
-          <input type="radio" id="q5o3" name="a5" value="option 3"> <label class="correct_quiz"></label>Creating a database of India's unorganized workers</label>
-          <input type="radio" id="q5o4" name="a5" value="option 4"> None of the above
-          <br>
-          <button type="submit" class="btn1" style="margin-top: 2vh;" onclick="res()">Submit</button>
-          <div id="output"></div>
-        </div>
-      </div>
-      </div>
-    </div>
+      
     <!-- Daily Updates--------------------------------------------------------------------- -->
     <div style="padding-top: 25vh;padding-bottom: 25vh;" id="Daily Updates">
       <div class="container">
