@@ -190,7 +190,7 @@
                 <input type="radio" id="q3o3" name="a3" value="option 3">Milkha Singh
                 <input type="radio" id="q3o4" name="a3" value="option 4">PT Usha       
                 <br>
-                <p style="padding-top: 3vh;">Q4.when was NTPC (NTPC-Renewable Energy),formed ?</p>
+                <p style="padding-top: 3vh;">Q4.When was NTPC (NTPC-Renewable Energy),formed ?</p>
                 <input type="radio" id="q4o1" name="a4" value="option 1"><label class="correct_quiz"></label>October 2020</label>
                 <input type="radio" id="q4o2" name="a4" value="option 2">October 2021
                 <input type="radio" id="q4o3" name="a4" value="option 3">October 2019
@@ -534,12 +534,12 @@
             var score = 0;
             var a1 = document.getElementsByName('a1');
             for (i = 0; i < a1.length; i++) {
-              if (a1[i].checked && a1[i].value == 'option 1')
+              if (a1[i].checked && a1[i].value == 'option 3')
                 score = score + 1
             }
             var a2 = document.getElementsByName('a2');
             for (i = 0; i < a2.length; i++) {
-              if (a2[i].checked && a2[i].value == 'option 2')
+              if (a2[i].checked && a2[i].value == 'option 1')
                 score = score + 1
             }
             var a3 = document.getElementsByName('a3');
@@ -549,7 +549,7 @@
             }
             var a4 = document.getElementsByName('a4');
             for (i = 0; i < a4.length; i++) {
-              if (a4[i].checked && a4[i].value == 'option 2')
+              if (a4[i].checked && a4[i].value == 'option 1')
                 score = score + 1
             }
             var a5 = document.getElementsByName('a5');
@@ -558,7 +558,7 @@
                 score = score + 1
             }
             document.getElementById("output").innerHTML
-              = "Total Score " + score + "/5. Here are the correct answers- 1. a, 2. b, 3. a, 4. b, 5. c";
+              = "Total Score " + score + "/5. Here are the correct answers- 1. c, 2. a, 3. a, 4. a, 5. c";
             let myElements1 = document.querySelectorAll(".correct_quiz");
             document.getElementById("output").innerHTML
 
