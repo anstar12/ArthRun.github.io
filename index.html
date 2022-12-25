@@ -172,10 +172,10 @@
                 <hr>
               </h1>
               <div class="back text-center" data-aos="fade-down-right" data-aos-duration="1000">
-                <p style="padding-top: 3vh;"></p>Q1.What is the scientific name of monarch butterfly. </p>
-                <input type="radio" id="q1o1" name="a1" value="option 1"><label class="correct_quiz"></label>Danaus plexippus</label>  
-                <input type="radio" id="q1o2" name="a1" value="option 2"> Lepidoptera
-                <input type="radio" id="q1o3" name="a1" value="option 3"> Red admiral 
+                <p style="padding-top: 3vh;"></p>Q1.Who is the new Prime Minister of the UK?</p>
+                <input type="radio" id="q1o1" name="a1" value="option 1">Liz Truss  
+                <input type="radio" id="q1o2" name="a1" value="option 2"> <label class="correct_quiz"></label>Rishi Sunak</label>
+                <input type="radio" id="q1o3" name="a1" value="option 3"> Boris Johnson 
                 <input type="radio" id="q1o4" name="a1" value="option 4"> None of the above  
                 <br>
                 <p style="padding-top: 3vh;">Q2.Which article of the Indian Constitution provides for Uniform Civil Code for the citizens.</p>
@@ -536,7 +536,7 @@
             var score = 0;
             var a1 = document.getElementsByName('a1');
             for (i = 0; i < a1.length; i++) {
-              if (a1[i].checked && a1[i].value == 'option 1')
+              if (a1[i].checked && a1[i].value == 'option 2')
                 score = score + 1
             }
             var a2 = document.getElementsByName('a2');
@@ -560,7 +560,7 @@
                 score = score + 1
             }
             document.getElementById("output").innerHTML
-              = "Total Score " + score + "/5. Here are the correct answers- 1. a, 2. b, 3. c, 4. d, 5. b";
+              = "Total Score " + score + "/5. Here are the correct answers- 1. b, 2. b, 3. c, 4. d, 5. b";
             let myElements1 = document.querySelectorAll(".correct_quiz");
             document.getElementById("output").innerHTML
 
